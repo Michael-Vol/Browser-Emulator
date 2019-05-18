@@ -1,0 +1,35 @@
+This program in C simulates the functionality of an Internet Browser using linked lists. 
+The user types a number from 0 to 17 which corresponds to the following options:
+1) SessionNew: Creates the first Session and initializes its members and the Tab and Site Lists
+
+2) SessionNewTab: Creates a new Tab node and its first Site
+
+3) SessionTabShow: Prints the address of the current Site of the current Tab.
+
+4) SessionTabNext, 5) SessionTabPrev: Sets the current Tab node to the next/previous node of the Tab list respectively.
+
+6)SessionTabMoveLeft,7)SessionTabMoveRight: Switches the current Tab witih the previous/next node of the Tab list respectively.
+
+8)SessionNewOpeningAddress: The user types a string which is used to change the default Opening Address.
+
+9)SesionShowOpeningAddress: Prints the default Opening Address.
+10)SessionSiteNext, 11)SessionSitePrev: Sets the current Site of the current Tab to the next/previous site node respectively.
+
+12)SessionSiteShow: Prints the address of current Site of current Tab(basically the same as SessionTabShow).
+
+13)SessionTabClose: Deletes the Site list and the current Tab node. The current Tab is now the next Tab. If the last Tab is about to
+be deleted this option also deletes the whole Session.
+
+14)SessionClose: Deletes the whole Session.
+
+15)SessionNewAddress: Requests a new site address from the user and creates the next node of current Site of current TAb.If there are additional Site 
+nodes after the current Site, it deletes them before the insertion of the new Site Node.
+
+16)Switch Session: Switches Session(Default Session is Session 1).
+
+17)SessionOpenNewTab: Creates new Tab with the Address of current Site.
+
+Additional Functionality
+
+In case the user types everything other than a number from 0-17 the options are printed again.In order to close the program
+the user must type the number 0 to the option field.
